@@ -57,10 +57,11 @@ typings/
 # gatsby files
 .cache/
 public
-.idea
+
 
 # Mac files
 .DS_Store
+.idea/
 
 # Yarn
 yarn-error.log

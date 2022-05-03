@@ -1,7 +1,7 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
+const React = require('react');
+const { wrapPageElement } = require("gatsby/dist/utils/api-browser-docs");
+const Layout = require('./src/components/Layout').default
 
-// You can delete this file if you're not using it
+exports.wrapPageElement = ({element, props}) => {
+  return <Layout {...props}>{element}</Layout>
+}

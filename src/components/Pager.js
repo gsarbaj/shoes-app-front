@@ -18,13 +18,6 @@ const Pager = ({ pageContext }) => {
         }
       />
 
-
-      {previousPagePath && (
-        <span><Link to={previousPagePath}>Previous</Link></span>
-      )}
-      {nextPagePath && (
-        <span><Link to={nextPagePath}>Next</Link></span>
-      )}
     </>
   );
 };
